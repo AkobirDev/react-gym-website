@@ -1,14 +1,3 @@
-/* 
-pr 4
-pr-v hsl(210,100%,65%)
-sc #ffb116
-gr100 hsl(240,47%,94%)
-gr200 hsl(240,26%,75%)
-gr300 hsl(240,24%,64%)
-gr400 hsl(240,16%,41%)
-gr500 hsl(240,44%,25%)
-gr600 hsl(240,48%,15%) */
-
 *,
 *::after,
 *::before {
@@ -22,7 +11,7 @@ gr600 hsl(240,48%,15%) */
 }
 
 body {
-  font-family: "Montserrat", "sans-serif";
+  font-family: "Montserrat", sans-serif;
   color: hsl(240, 26%, 75%);
   line-height: 1.7;
   overflow-x: hidden;
