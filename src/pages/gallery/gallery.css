@@ -1,0 +1,30 @@
+.gallery__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.gallery__container article {
+  border: 1rem solid transparent;
+  transition: all 0.5s ease;
+}
+.gallery__container article:hover {
+  border-color: hsl(240, 44%, 25%);
+}
+
+/* MEDIA QUERIES (medium) */
+@media screen and (max-width: 1024px) {
+  .gallery__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .gallery__container article {
+    border: 0;
+  }
+}
+
+/* MEDIA QUERIES (small) */
+@media screen and (max-width: 1024px) {
+  .gallery__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

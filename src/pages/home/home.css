@@ -1,0 +1,362 @@
+/* ---------- Header ------------ */
+
+.main__header {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  margin-top: 3rem;
+}
+
+.main__header-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6rem;
+}
+.main__header-left {
+  margin-top: -3rem;
+}
+.main__header-left h4 {
+  margin-bottom: 1rem;
+  color: #ffb116; /*secondary*/
+  font-weight: 400;
+}
+
+.main__header-left p {
+  margin: 1rem 0 3.5rem;
+  font-size: 1.1rem;
+}
+.main__header-right {
+  display: grid;
+  place-items: center;
+}
+
+/* ---------- Programs ------------ */
+
+.programs {
+  margin-top: 4rem;
+}
+.programs__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  margin-top: 4rem;
+}
+.programs__program a {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.programs__program:hover a {
+  background-color: #ffb116;
+  color: hsl(240, 47%, 94%);
+}
+
+/* ---------- Vaalues ------------ */
+
+.values__container {
+  display: grid;
+  grid-template-columns: 38% 50%;
+  gap: 12%;
+  align-items: center;
+}
+
+.values__image {
+  height: 35rem;
+}
+.values__image img {
+  height: 100%;
+  object-fit: cover;
+}
+.values__right > p {
+  margin: 1.5rem 0 5rem;
+}
+.values__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.4rem 2.4rem;
+}
+.card.values__value {
+  padding-top: 3.5rem;
+  text-align: left;
+  position: relative;
+}
+.card.values__value span {
+  position: absolute;
+  top: -1.5rem;
+}
+
+/* ---------- FAQs ------------ */
+
+.faqs__wrapper {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 5rem;
+  align-items: flex-start;
+}
+.faq {
+  background-color: hsl(240, 44%, 25%);
+  padding: 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.faq div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq__icon {
+  background-color: transparent;
+  color: hsl(240, 47%, 94%);
+  font-size: 1.5rem;
+}
+.faq p {
+  margin-top: 1.5rem;
+}
+
+/* ---------- Testimonials ------------ */
+
+.testimonials {
+  width: 50rem;
+  margin-inline: auto;
+}
+.testimonials__head {
+  justify-content: center;
+}
+.card.testimonial {
+  position: relative;
+  text-align-last: left;
+  margin-top: 5rem;
+}
+.testimonial__avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1.5rem;
+  border: 2px solid transparent;
+  overflow: hidden;
+  position: absolute;
+  top: -2rem;
+  left: calc(50% - 2rem);
+  transition: all 0.5s ease;
+}
+.testimonial:hover .testimonial__avatar {
+  border-radius: 50%;
+  border-color: hsl(240, 16%, 41%);
+}
+.testimonial__quote {
+  font-style: italic;
+  margin: 1rem 0 2rem;
+}
+.card small.testimonial__title {
+  margin-top: 0.3rem;
+}
+.testimonials__btn-container {
+  width: fit-content;
+  background-color: transparent;
+  margin: 2.5rem auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.testimonial__btn {
+  background-color: transparent;
+  cursor: pointer;
+}
+.testimonial__btn svg {
+  font-size: 1.8rem;
+  fill: hsl(240, 100%, 50%);
+  width: 3rem;
+  height: 3rem;
+}
+
+/* ---------- Footer ------------ */
+
+footer {
+  background-color: hsl(240, 75%, 47%);
+  margin-top: 7rem;
+  padding-top: 7rem;
+  font-size: 0.9rem;
+  color: hsl(240, 47%, 94%);
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: 26rem 1fr 1fr 1fr;
+  gap: 6rem;
+}
+.footer__container article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.7rem;
+}
+.footer__container article p {
+  margin-top: 0.5rem;
+}
+.footer__container article h4 {
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+}
+.footer__socials {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.footer__socials a {
+  background-color: hsl(240, 47%, 94%);
+  display: inherit;
+  padding: 0.7rem;
+  border: 1px solid transparent;
+  border-radius: 0.6rem;
+  transition: all 0.5s ease;
+}
+.footer__socials a svg {
+  color: hsl(240, 48%, 15%);
+}
+.footer__socials a:hover {
+  border-color: hsl(240, 47%, 94%);
+  background: transparent;
+}
+.footer__socials a:hover svg {
+  color: hsl(240, 47%, 94%);
+}
+.footer__copyright {
+  color: hsl(240, 47%, 94%);
+  text-align: center;
+  font-style: 2.5rem;
+  padding: 1.5rem 0;
+  border-top: 2px solid hsl(210, 100%, 65%);
+  margin-top: 5rem;
+}
+
+/* 
+MEDIA QUERIES (medium) */
+
+@media screen and (max-width: 1024px) {
+  /* ---------- Header ------------ */
+
+  .main__header {
+    height: fit-content;
+    padding: 12rem 0;
+  }
+  .main__header-container {
+    gap: 0;
+  }
+
+  /* ---------- Programs ------------ */
+
+  .programs__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* ---------- Values ------------ */
+
+  .values__container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 4rem;
+  }
+  .values__wrapper {
+    gap: 4rem 3rem;
+  }
+  .values__image {
+    display: none;
+  }
+
+  /* ---------- FAQs ------------ */
+
+  .faqs__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  /* ---------- Testimonials ------------ */
+
+  .testimonials {
+    width: 75%;
+  }
+
+  /* ---------- Footer ------------ */
+
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 8rem;
+  }
+}
+
+/* MEDIA QUERIES (small) */
+
+@media screen and (max-width: 600px) {
+  /* ---------- Header ------------ */
+
+  .main__header {
+    margin-top: 0;
+    padding: 12rem 0 0;
+    height: 100vh;
+  }
+  .main__header-right {
+    display: none;
+  }
+  .main__header-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* ---------- Programs ------------ */
+
+  .programs__wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  .programs__program {
+    width: 84%;
+    margin: 0 auto;
+  }
+
+  /* ---------- Values ------------ */
+
+  .values__wrapper {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .card.values__value {
+    width: 84%;
+    margin-inline: auto;
+  }
+
+  /* ---------- FAQs ------------ */
+
+  .faqs__wrapper {
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+
+  /* ---------- Testimonials ------------ */
+
+  .testimonials {
+    width: 100%;
+  }
+
+  /* ---------- Footer ------------ */
+
+  footer {
+    margin-top: 7rem;
+  }
+  .footer__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .footer__container article {
+    align-items: center;
+  }
+  .footer__container article p {
+    text-align: center;
+  }
+}
